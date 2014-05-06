@@ -1,0 +1,21 @@
+-VARS SELECTORS- {
+	content: "$content = $('#content')";
+}
+
+-clearActiveNav- {
+	content: "$nav.find('.nav active').removeClass('active')";
+}
+
+-navClicked- {
+	content: "$this.addClass('active')";
+}
+
+-loadPage- {
+  content: "$content.load('ajax/'+$this.attr('href'), func(){ CSSJS.update(); })";
+}
+
+.nav a[href^="#"] {
+  color: #FF0066;
+  content: "!click(clearActiveNav, navClicked, loadPage)";
+  text-decoration: none;
+}
