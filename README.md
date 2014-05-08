@@ -1,5 +1,3 @@
-<img src="http://css.js.box.biz/images/css.js.2.png" />
-
 Write scripts in style
 ======================
 Add the css.js script to your page and you can begin to write JavaScript/jQuery in your CSS rules. All your scripts are localized to each selector's element's scope. All major browsers on all devices supported!
